@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kumpul Komunitas - Kalender</title>
+    <meta name="distributor" content="Global" />
+    <meta itemprop="contentRating" content="General" />
+    <meta name="robots" content="All" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="description" content="The source of truly unique and awesome jquery plugins." />
+    <meta name="keywords" content="slider, carousel, responsive, swipe, one to one movement, touch devices, jquery, plugin, bootstrap compatible, html5, css3" />
+    <meta name="author" content="w3widgets.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- Respomsive slider -->
+    <link href="dist/css/responsive-calendar.css" rel="stylesheet">
+        <link href="carousel.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">My Community</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kategori <span class="caret"></span></a>
+          <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+              <li class="dropdown-header">General Discussion</li>
+                  <li><a href="##">General Discussion</a></li>
+                  <li><a href="##">The Lounge</a></li>
+                  <li><a href="##">FAQ</a></li>
+              <li role="separator" class="divider"></li>
+
+              <li class="dropdown-header">Kendaraan</li>
+                  <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">Kendaraan</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#roda2">Kendaraan Roda 2</a></li>
+                      <li><a href="#roda4">Kendaraan Roda 4</a></li>
+                      <li><a href="#sepeda">Sepeda</a></li>
+                    </ul>
+                  </li>
+              <li role="separator" class="divider"></li>
+
+              <li class="dropdown-header">Alat Elektronik</li>
+                  <li><a href="#">Komputer</a></li>
+                  <li><a href="#">TV</a></li>
+                  <li><a href="#">DVD Player</a></li>
+              <li role="separator" class="divider"></li>
+
+              <li class="dropdown-header">Hiburan</li>
+                  <li><a href="#">Game Komputer</a></li>
+                  <li><a href="#">Game Konsol</a></li>
+                  <li><a href="#">Musik</a></li>
+              <li role="separator" class="divider"></li>
+          </ul>
+        </li>
+        <li><a href="Request.html">Daftar Komunitas</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+      </div>
+  </nav>
+
+    <div class="container">
+      <!-- Responsive calendar - START -->
+    	<div class="responsive-calendar">
+        <div class="controls">
+            <a class="pull-left" data-go="prev"><div class="btn btn-primary">Prev</div></a>
+            <h4><span data-head-year></span> <span data-head-month></span></h4>
+            <a class="pull-right" data-go="next"><div class="btn btn-primary">Next</div></a>
+        </div><hr/>
+        <div class="day-headers">
+          <div class="day header">Mon</div>
+          <div class="day header">Tue</div>
+          <div class="day header">Wed</div>
+          <div class="day header">Thu</div>
+          <div class="day header">Fri</div>
+          <div class="day header">Sat</div>
+          <div class="day header">Sun</div>
+        </div>
+        <div class="days" data-group="days">
+          
+        </div>
+      </div>
+      <!-- Responsive calendar - END -->
+    </div>
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/responsive-calendar.js"></script>
+    <script type="text/javascript">
+  /*    $(document).ready(function () {
+        $(".responsive-calendar").responsiveCalendar({
+          time: '2016-10',
+          events: {
+            "2013-04-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
+            "2013-04-26": {"number": 1, "url": "http://w3widgets.com"}, 
+            "2013-05-03":{"number": 1}, 
+            "2013-06-12": {}}
+        });
+      });*/
+		$( document ).ready( function() {
+		  $('.responsive-calendar').responsiveCalendar();
+		});
+    </script>
+  </body>
+</html>
